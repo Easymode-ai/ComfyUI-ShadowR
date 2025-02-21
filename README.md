@@ -7,4 +7,4 @@ Download [weights](https://www.dropbox.com/scl/fi/610ihrdgemv0zkfgrwscu/Shadow_R
 `python_embeded\python.exe -m pip install -r requirements.txt`
 
 
-Special thanks to SpecialBruno at the Tencent Hunyuan community discord
+Special thanks to VisualBruno at the Tencent Hunyuan community discord
