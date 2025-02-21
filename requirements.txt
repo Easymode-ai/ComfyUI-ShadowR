@@ -1,0 +1,9 @@
+numpy
+matplotlib
+scikit-learn
+scikit-image
+opencv-python
+timm
+kornia
+einops
+pytorch_lightning
