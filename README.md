@@ -6,6 +6,9 @@ Download [weights](https://www.dropbox.com/scl/fi/610ihrdgemv0zkfgrwscu/Shadow_R
 
 Run `python_embeded\python.exe -m pip install -r requirements.txt` in `ComfyUI-Shadow_R` directory
 
+# Change Log
+- Added chunking to speed things up significantly
+
 # Credits
 
-Special thanks to VisualBruno at the Tencent Hunyuan community discord
+Special thanks to VisualBruno at the Tencent Hunyuan community discord for providing initial code
