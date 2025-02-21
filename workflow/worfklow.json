@@ -1,0 +1,188 @@
+{
+  "last_node_id": 4,
+  "last_link_id": 3,
+  "nodes": [
+    {
+      "id": 2,
+      "type": "ShadowRShadowRemover",
+      "pos": [
+        2325.40185546875,
+        148.89157104492188
+      ],
+      "size": [
+        315,
+        102
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model",
+          "type": "SHADOWRMODEL",
+          "link": 1
+        },
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "link": 2
+        }
+      ],
+      "outputs": [
+        {
+          "name": "image",
+          "type": "IMAGE",
+          "links": [
+            3
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShadowRShadowRemover"
+      },
+      "widgets_values": [
+        512,
+        64
+      ]
+    },
+    {
+      "id": 1,
+      "type": "ShadowRModelLoader",
+      "pos": [
+        1877.5181884765625,
+        43.61823272705078
+      ],
+      "size": [
+        315,
+        82
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "model",
+          "type": "SHADOWRMODEL",
+          "links": [
+            1
+          ],
+          "slot_index": 0
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ShadowRModelLoader"
+      },
+      "widgets_values": [
+        "shadowremoval.pkl",
+        "refinement.pkl"
+      ]
+    },
+    {
+      "id": 4,
+      "type": "PreviewImage",
+      "pos": [
+        2690.60595703125,
+        218.70242309570312
+      ],
+      "size": [
+        485.47760009765625,
+        504.7429504394531
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "link": 3
+        }
+      ],
+      "outputs": [],
+      "properties": {
+        "Node name for S&R": "PreviewImage"
+      }
+    },
+    {
+      "id": 3,
+      "type": "LoadImage",
+      "pos": [
+        1769.2894287109375,
+        220.3760223388672
+      ],
+      "size": [
+        499.080810546875,
+        512.2408447265625
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            2
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "00012-178150783.png",
+        "image"
+      ]
+    }
+  ],
+  "links": [
+    [
+      1,
+      1,
+      0,
+      2,
+      0,
+      "SHADOWRMODEL"
+    ],
+    [
+      2,
+      3,
+      0,
+      2,
+      1,
+      "IMAGE"
+    ],
+    [
+      3,
+      2,
+      0,
+      4,
+      0,
+      "IMAGE"
+    ]
+  ],
+  "groups": [],
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.7768327218596361,
+      "offset": {
+        "0": -1176.8438720703125,
+        "1": 126.29337310791016
+      }
+    },
+    "node_versions": {
+      "comfy-core": "0.3.14"
+    },
+    "ue_links": []
+  },
+  "version": 0.4
+}
