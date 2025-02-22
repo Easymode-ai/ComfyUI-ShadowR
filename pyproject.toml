@@ -1,0 +1,15 @@
+[project]
+name = "shadowr"
+description = "ComfyUI [a/movingforward100/Shadow_R](https://github.com/movingforward100/Shadow_R) Wrapper"
+version = "1.0.0"
+license = {file = "LICENSE"}
+dependencies = ["numpy", "matplotlib", "scikit-learn", "scikit-image", "opencv-python", "timm", "kornia", "einops", "pytorch_lightning"]
+
+[project.urls]
+Repository = "https://github.com/Easymode-ai/ComfyUI-ShadowR"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "ComfyUI-ShadowR"
+Icon = ""
